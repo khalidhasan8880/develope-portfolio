@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer portfolio</title>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+
+    <style>
+       *{
+        font-family: 'Open Sans', sans-serif;
+        margin: 0;
+        box-sizing: border-box;
+       }
+       
+
+    /* header and nevigetion style */
+       .logo{
+        font-weight: 800;
+        font-size: 45px;
+        line-height: 61px;
+       }
+       header{
+        background-color: #fdf4ed;
+        background-image: url('images/header_bg.png') , url('images/developer.png');
+        background-position: bottom right , left;
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin-bottom: 100px;
+
+       }
+       nav{
+        display: flex;
+        margin-top: 30px;
+        justify-content: space-between;
+        padding: 0px 82px 42px;
+        
+       }
+        nav ul{
+            display: flex;
+            text-decoration: none;
+            margin-right: 264px;
+            margin-top: 3px;
+            margin: 0px 123px 0px 67px;
+            align-items: center;
+        }
+        ul li {
+            list-style: none;
+            margin-left: 14px;
+        }
+        .primary-btn{
+        position:relative;
+        height: 64px;
+        width: 150px;
+        border-radius: 5px;
+        border: none;
+        color: #FFFFFF;
+        background-color: #FD6E0A;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 27px;
+
+
+       }
+       
+        span{
+            color: #FD6E0A;
+        }
+
+
+        .banner{
+            display: flex;
+            justify-content: space-between;
+            
+        }
+        .banner-article{
+            position: relative;
+            top:200px;
+            left: 82px;
+            width: 50%;
+        }
+        .banner-article button{
+            margin: 12px 12px;
+        }
+        .banner-article h1{
+            margin-bottom: 12px;
+            font-weight: 600;
+            font-size: 85px;
+            line-height: 116px;
+        }
+        .banner-article h3{
+            font-weight: 600;
+            font-size: 45px;
+            line-height: 61px;
+            color: #474747;
+        }
+        .banner-article p{
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 30px;
+            color: #757575;
+        }
+
+        
+        /* main style */
+/* first-section */
+        .first-section{
+            background: #f7eee8;
+            padding: 100px;
+        }
+        
+        .common-style{
+            height: auto;
+            border-radius: 10px;
+            width: 1040px; 
+            margin: 0 auto;
+            
+            box-sizing: border-box;   
+            margin-bottom: 100px;
+        }
+        .common-style p{
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 30px;
+            margin-top: 55px;
+            color: #757575;
+        }
+        .common-style .information{
+            display: flex;
+            justify-content: space-around;
+            margin-top: 100px;
+            
+        }
+        .common-style ul > :first-child{
+            color: #757575;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 30px;
+        }
+        /* seconnd-section style */
+        .section-article{
+            text-align: center;
+        }
+        .cards{
+            display: flex;
+            margin-top: 50px;
+            justify-content: space-around;
+        }
+        .cards ul{
+            border-radius: 8px;
+            box-shadow: #e2dada 2px 4px 12px;
+            padding: 32px;
+            margin: 0px 12px 0px;
+        }
+        .cards ul li{
+            margin: 0;
+
+        }
+        
+        .resume{
+            display: flex;
+            gap: 22px;
+            margin-top: 100px;
+
+        }
+        .resume-title{
+            font-weight: 700;
+            font-size: 25px;
+            line-height: 34px;
+            margin-top: 15px;
+        }
+        .resume-sub-Title{
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 27px;
+            margin: 12px 0px 12px;
+            color: #757575;
+        }
+        .resume-header{
+            font-weight: 700;
+            font-size: 35px;
+            line-height: 48px;
+        }
+        .resume-sub-header{
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 41px;
+        }
+        .resume-descrip{
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 28px;
+           
+            color: #757575;
+        }
+        .resume-btn{
+            margin: 0 auto;
+        }
+        /* footer style */
+
+        footer{
+            display: flex;
+            background-color: #FFF8F3;
+
+        }
+        footer input{
+            display: block;
+            margin-top: 50px;
+            width: 100%;
+            height: 56px;
+            border-radius: 8px;
+            padding-left: 12px;
+            border: none;
+        }
+        footer div{
+            padding: 100px;
+            width: 50%;
+        }
+        footer textarea{
+            margin-top: 50px;
+            height: 200px;
+            width: 300px;
+            padding-left: 12px;
+        }
+        .btn{
+            display: block;
+        }
+        footer div h1{
+            margin: 41px 0;
+            font-weight: 700;
+            font-size: 35px;
+            line-height: 48px;
+           
+        }
+        footer div p{
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 28px;
+            color: #474747;
+
+        }
+        footer img{
+            margin-top: 40px;
+            margin-right: 30px;
+            cursor:pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <h2 class="logo" >kha<span>l</span>id</h2>
+
+            <ul>
+                <li>portfolio</li>
+                <li>blog</li>
+                <li><button  class="primary-btn">Hire Me</button></li>
+            </ul>
+        </nav>
+        <!-- banner -->
+        <div class="banner">
+            <div class="banner-article">
+                <h3>Hi, i am</h3>
+                <h1>khalid Hasan</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam soluta quod dignissimos consequatur eveniet tempore ipsa expedita tenetur, veniam necessitatibus inventore excepturi temporibus voluptatem asperiores similique, doloribus ab doloremque! Explicabo.</p>
+
+                <button class="primary-btn">Download CV</button>
+                <button  class="primary-btn">Contac</button>
+            </div>
+
+            <img class="img" src="images/khalid.png" alt="">
+        </div>
+    </header>
+
+    <main>
+        <section class="first-section common-style" >
+            <div class="section-article">
+                <h2>About Me</h2>
+                <p>I, m a designer & developer with a passion for web design. I enjoy developing simple,    clean and slick websites that provide real value to the end user. Thousands of clients     have procured exceptional resulfs while working with me. Delivering work within time and    budget which meets clients requirements in our mata.</p>
+            </div>
+            <div class="information">
+                <ul>
+                    <li>Name</li>
+                    <li><h4>khalid Hasan</h4></li>
+                </ul>
+                <ul>
+                    <li >Email</li>
+                    <li><h4>khalidhasan8880@gmail.com</h4></li>
+                </ul>
+                <ul>
+                    <li>Birth of Date</li>
+                    <li><h4>06/06/2003</h4></li>
+                </ul>
+                <ul>
+                    <li>From</li>
+                    <li><h4>Faridpur, Dhaka, Bangladesh</h4></li>
+                </ul>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+        <section class="second-section common-style">
+            <div class="section-article">
+                <h2>About Me</h2>
+                <p>I, m a designer & developer with a passion for web design. I enjoy developing simple,    clean and slick websites that provide real value to the end user. Thousands of clients     have procured exceptional resulfs while working with me. Delivering work within time and    budget which meets clients requirements in our mata.</p>
+            </div>
+            <div class="cards">
+                <ul>
+                    <li><img src="images/icons/js.png" alt=""></li>
+                    <li><h4>JavaScript</h4></li>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi asperiores minus illo!</p>
+                </ul>
+                <ul>
+                    <li><img src="images/icons/react.png" alt=""></li>
+                    <li><h4>React</h4></li>
+                    <li><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero ut placeat corporis?</p></li>
+                </ul>
+                <ul>
+                    <li><img src="images/icons/nodejs.png" alt=""></li>
+                    <li><h4>Node.js</h4></li>
+                    <li><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero ut placeat corporis?</p></li>
+                </ul>
+                <ul>
+                    <li><img src="images/icons/mongo.png" alt=""></li>
+                    <li><h4>MongoDB</h4></li>
+                    <li><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero ut placeat corporis?</p></li>
+                </ul>
+            </div>
+        </section>
+
+
+
+
+
+
+        <section class="third-secton common-style">
+            <h2 class="section-article resume-header">A Summary Of My Resume</h2>
+            <div class="resume">
+                <div class="education-section">
+                    <h2 class="resume-sub-header">My Education</h2>
+                    
+                    <div>
+                        <h3 class="resume-title">Master In Computer</h3>
+                        <h6 class="resume-sub-Title">Bangla university 2023</h6>
+                        <p class="resume-descrip">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta aperiam cupiditate ullam maxime sapiente.</p>                    
+                    </div>
+                    <hr>
+                    <div>
+                        <h3 class="resume-title">Master In Computer</h3>
+                        <h6 class="resume-sub-Title">Bangla university 2023</h6>
+                        <p class="resume-descrip">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta aperiam cupiditate ullam maxime sapiente.</p>                    
+                    </div>
+                    <hr>
+                    <div>
+                        <h3 class="resume-title">Master In Computer</h3>
+                        <h6 class="resume-sub-Title">Bangla university 2023</h6>
+                        <p class="resume-descrip">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta aperiam cupiditate ullam maxime sapiente.</p>                    
+                    </div>
+                    <hr>
+                </div>
+                <div class="experi">
+                    <h2 class="resume-sub-header">My Experience</h2>
+                    <div>
+                        <h3 class="resume-title">Master In Computer</h3>
+                        <h6 class="resume-sub-Title">Bangla university 2023</h6>
+                        <p class="resume-descrip">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta aperiam cupiditate ullam maxime sapiente.</p>                    
+                    </div>
+                    <hr>
+                    <div>
+                        <h3 class="resume-title">Master In Computer</h3>
+                        <h6 class="resume-sub-Title">Bangla university 2023</h6>
+                        <p class="resume-descrip">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta aperiam cupiditate ullam maxime sapiente.</p>                    
+                    </div>
+                    <hr>
+                    <div>
+                        <h3 class="resume-title">Master In Computer</h3>
+                        <h6 class="resume-sub-Title">Bangla university 2023</h6>
+                        <p class="resume-descrip">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta aperiam cupiditate ullam maxime sapiente.</p>                    
+                    </div>
+                    <hr>
+                </div>
+               
+            </div>
+        </section>
+
+        
+    </main>
+
+    <footer>
+        <div>
+            <h1>let's connect</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae libero aliquam, unde nihil, reprehenderit sit obcaecati architecto culpa autem modi debitis incidunt assumenda.</p>
+            <img src="images/icons/facebook.png" alt="">
+            <img src="images/icons/insta.png" alt="">
+            <img src="images/icons/twitter.png" alt="">
+        </div>
+        <div>
+            <h1>let's message me</h1>
+            <form action="">
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="email">
+                <textarea placeholder="Message" name="" id="" cols="30" rows="10"></textarea>
+                <button class="btn primary-btn" type="submit">Submit</button>
+            </form>
+        </div>
+
+
+    </footer>
+</body>
+</html>
